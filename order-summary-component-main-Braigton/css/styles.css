@@ -1,0 +1,152 @@
+:root {
+    --celestebg: hsl(225, 100%, 94%);
+    --morado: hsl(245, 75%, 52%);
+    --gris: hsl(224, 23%, 55%);
+    --azulOscuro: hsl(223, 47%, 23%);
+
+    --fuente: 'Red Hat Display', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--fuente);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1px);
+    font-size: 16px;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--celestebg);
+}
+@media (max-width: 375px) {
+    body {
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+}
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: .5rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+a {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--morado);
+}
+a:hover {
+    color: hsl(245, 75%, 30%);
+}
+.tarjeta {
+    width: 32rem;
+    background-color: white;
+    border-radius: 2rem;
+    -webkit-box-shadow: 0px 0px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 5px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px -3px rgba(0,0,0,0.75);
+}
+.ilustracion {
+    width: 100%;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+.info {
+    font-size: 1rem;
+    padding: 0 3rem;
+    text-align: center;
+}
+.info__parrafo {
+    color: var(--gris);
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+.plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 3rem;
+    background-color: hsl(224, 23%, 70%, 0.2);
+    border-radius: 1rem;
+    padding: 1rem 0;
+}
+.contenido-plan {
+    display: flex;
+    align-items: center;
+}
+.plan__texto {
+    padding: 0 1.5rem;
+}
+.titulo-plan {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: .3rem;
+}
+.precio {
+    color: var(--gris);
+    font-size: 1.3rem;
+}
+.icon-music {
+    width: 3.5rem;
+}
+.botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.boton-payment {
+    margin-top: 1rem;
+    background-color: var(--morado);
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    width: 90%;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: var(--fuente);
+    font-weight: bold;
+    -webkit-box-shadow: 0px 3px 9px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 9px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 9px -3px rgba(0,0,0,0.75);
+}
+.boton-payment:hover {
+    background-color: hsl(245, 75%, 40%);
+}
+.boton-cancel {
+    margin: 1rem 0;
+    background-color: white;
+    color: var(--gris);
+    padding: 1rem;
+    text-decoration: none;
+    width: 90%;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: var(--fuente);
+    font-weight: bold;
+}
+.boton-cancel:hover {
+    background-color: hsl(224, 23%, 92%);
+}
